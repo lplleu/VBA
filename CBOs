@@ -1,3 +1,251 @@
 #jedenfalls
 #full app
 #12-08-2016
+
+  Function Area(x As Double, y As Double) As Double
+  
+    OptionButton1.Value = Worksheets("cbo_gov").Cells(ActiveCell.Row, "M").Value
+    OptionButton3.Value = Worksheets("cbo_gov").Cells(ActiveCell.Row, "O").Value
+
+     
+    CheckBox73.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "B").Value
+    CheckBox74.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "C").Value
+    CheckBox75.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "D").Value
+    CheckBox76.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "E").Value
+    CheckBox77.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "F").Value
+    CheckBox99.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "G").Value
+    CheckBox100.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "H").Value
+    CheckBox101.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "I").Value
+    CheckBox102.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "J").Value
+    CheckBox103.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "K").Value
+    
+    CheckBox89.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "L").Value
+    CheckBox90.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "M").Value
+    CheckBox91.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "N").Value
+    CheckBox92.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "O").Value
+    CheckBox93.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "P").Value
+    CheckBox94.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "Q").Value
+    CheckBox95.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "R").Value
+    CheckBox96.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "S").Value
+    CheckBox97.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "T").Value
+    CheckBox98.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "U").Value
+    
+    TextBox1.Text = Worksheets("cbo").Cells(ActiveCell.Row, "B").Value
+    TextBox2.Text = Worksheets("cbo").Cells(ActiveCell.Row, "C").Value
+    CheckBox2.Value = Worksheets("cbo").Cells(ActiveCell.Row, "D").Value
+        CheckBox3.Value = Worksheets("cbo").Cells(ActiveCell.Row, "G").Value
+    TextBox49.Text = Worksheets("cbo").Cells(ActiveCell.Row, "E").Value
+    TextBox50.Text = Worksheets("cbo").Cells(ActiveCell.Row, "Q").Value
+    
+    If Worksheets("cbo").Cells(ActiveCell.Row, "F").Value = "Active" Then
+     ComboBox1.Value = "Active"
+    Else
+     Dim Ddd As String
+     Ddd = Worksheets("cbo").Range("F" & ActiveCell.Row) = Ddd
+     'MsgBox (Ddd)
+     'ComboBox1.Value = "Inactive"
+    End If
+    
+    
+    TextBox51.Text = Worksheets("cbo").Cells(ActiveCell.Row, "H").Value
+    TextBox52.Text = Worksheets("cbo").Cells(ActiveCell.Row, "I").Value
+    TextBox53.Text = Worksheets("cbo").Cells(ActiveCell.Row, "J").Value
+    TextBox54.Text = Worksheets("cbo").Cells(ActiveCell.Row, "K").Value
+    TextBox55.Text = Worksheets("cbo").Cells(ActiveCell.Row, "L").Value
+    TextBox56.Text = Worksheets("cbo").Cells(ActiveCell.Row, "M").Value
+    TextBox57.Text = Worksheets("cbo").Cells(ActiveCell.Row, "N").Value
+    TextBox58.Text = Worksheets("cbo").Cells(ActiveCell.Row, "O").Value
+    TextBox59.Text = Worksheets("cbo").Cells(ActiveCell.Row, "P").Value
+    
+    TextBox14.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "B").Value
+    TextBox15.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "C").Value
+    TextBox16.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "D").Value
+    TextBox17.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "E").Value
+    TextBox18.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "F").Value
+    TextBox19.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "G").Value
+    TextBox20.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "H").Value
+    TextBox21.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "I").Value
+    TextBox22.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "J").Value
+    TextBox23.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "K").Value
+    TextBox24.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "L").Value
+    TextBox60.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "N").Value
+    
+    TextBox170.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "P").Value
+    TextBox171.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "Q").Value
+    TextBox169.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "R").Value
+    TextBox178.Text = Worksheets("cbo_gov").Cells(ActiveCell.Row, "S").Value
+    
+    'TextBox27.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "B").Value
+    'TextBox28.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "C").Value
+    'TextBox29.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "D").Value
+    'TextBox30.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "E").Value
+    'TextBox31.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "F").Value
+    
+    CheckBox4.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "B").Value
+    CheckBox5.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "C").Value
+    CheckBox6.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "D").Value
+    CheckBox7.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "E").Value
+    CheckBox8.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "F").Value
+    CheckBox9.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "G").Value
+    CheckBox10.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "H").Value
+    CheckBox11.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "I").Value
+    CheckBox12.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "J").Value
+    CheckBox14.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "K").Value
+    CheckBox15.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "L").Value
+    CheckBox16.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "M").Value
+    CheckBox17.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "N").Value
+    CheckBox18.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "O").Value
+    CheckBox19.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "P").Value
+    CheckBox20.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "Q").Value
+    CheckBox21.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "R").Value
+    
+    
+    CheckBox23.Value = Worksheets("cbo_assets").Cells(ActiveCell.Row, "B").Value
+    CheckBox24.Value = Worksheets("cbo_assets").Cells(ActiveCell.Row, "C").Value
+    CheckBox25.Value = Worksheets("cbo_assets").Cells(ActiveCell.Row, "D").Value
+    CheckBox26.Value = Worksheets("cbo_assets").Cells(ActiveCell.Row, "E").Value
+    CheckBox27.Value = Worksheets("cbo_assets").Cells(ActiveCell.Row, "F").Value
+    CheckBox28.Value = Worksheets("cbo_assets").Cells(ActiveCell.Row, "G").Value
+    
+    TextBox177.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "J").Value
+    TextBox27.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "K").Value
+    TextBox28.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "L").Value
+    TextBox29.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "M").Value
+    TextBox30.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "N").Value
+    TextBox31.Text = Worksheets("cbo_assets").Cells(ActiveCell.Row, "O").Value
+        
+    CheckBox40.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "L").Value
+    CheckBox41.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "M").Value
+    CheckBox42.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "N").Value
+    CheckBox43.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "O").Value
+    CheckBox44.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "P").Value
+    CheckBox45.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "Q").Value
+    CheckBox46.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "R").Value
+    CheckBox47.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "S").Value
+    CheckBox83.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "T").Value
+    CheckBox85.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "U").Value
+    CheckBox86.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "V").Value
+    CheckBox87.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "W").Value
+    CheckBox88.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "X").Value
+    
+    CheckBox57.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AA").Value
+    CheckBox58.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AA").Value
+    CheckBox59.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AB").Value
+    CheckBox60.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AC").Value
+    CheckBox61.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AD").Value
+    CheckBox62.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AE").Value
+    CheckBox63.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AF").Value
+    CheckBox64.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AG").Value
+    CheckBox151.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AH").Value
+    
+    
+    CheckBox104.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "B").Value
+    CheckBox106.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "C").Value
+    CheckBox107.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "D").Value
+    CheckBox108.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "E").Value
+    
+    CheckBox118.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "F").Value
+    CheckBox119.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "G").Value
+    CheckBox121.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "H").Value
+    CheckBox122.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "I").Value
+    
+    CheckBox129.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "J").Value
+    CheckBox130.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "K").Value
+    CheckBox131.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "L").Value
+    CheckBox132.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "M").Value
+    
+    CheckBox140.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "N").Value
+    CheckBox141.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "O").Value
+    CheckBox142.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "P").Value
+    CheckBox143.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "Q").Value
+
+    TextBox87.Text = Worksheets("cbo_jvp").Cells(ActiveCell.Row, "B").Value
+    TextBox88.Text = Worksheets("cbo_jvp").Cells(ActiveCell.Row, "C").Value
+    TextBox89.Text = Worksheets("cbo_jvp").Cells(ActiveCell.Row, "D").Value
+    'TextBox89.Text = Worksheets("cbo_jvp").Cells(ActiveCell.Row, "E").Value
+    TextBox90.Text = Worksheets("cbo_jvp").Cells(ActiveCell.Row, "E").Value
+    TextBox91.Text = Worksheets("cbo_jvp").Cells(ActiveCell.Row, "F").Value
+    TextBox92.Text = Worksheets("cbo_jvp").Cells(ActiveCell.Row, "G").Value
+    TextBox93.Text = Worksheets("cbo_jvp").Cells(ActiveCell.Row, "H").Value
+
+       
+    TextBox94.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "B").Value
+    TextBox95.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "C").Value
+    TextBox96.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "D").Value
+    TextBox97.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "E").Value
+    TextBox98.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "F").Value
+    TextBox99.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "G").Value
+    TextBox100.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "H").Value
+    TextBox101.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "I").Value
+    TextBox102.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "J").Value
+    TextBox103.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "K").Value
+    TextBox104.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "L").Value
+    TextBox105.Text = Worksheets("cbo_support").Cells(ActiveCell.Row, "M").Value
+    CheckBox164.Value = Worksheets("cbo_support").Cells(ActiveCell.Row, "P").Value
+    
+    TextBox106.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "B").Value
+    TextBox107.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "C").Value
+    TextBox108.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "D").Value
+    TextBox109.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "E").Value
+    TextBox110.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "F").Value
+    TextBox111.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "G").Value
+    TextBox112.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "H").Value
+    TextBox113.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "I").Value
+    TextBox114.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "J").Value
+    TextBox115.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "K").Value
+    TextBox116.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "L").Value
+    TextBox117.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "M").Value
+    TextBox118.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "N").Value
+    TextBox119.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "O").Value
+    TextBox120.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "P").Value
+    TextBox121.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "Q").Value
+    TextBox122.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "R").Value
+    TextBox123.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "S").Value
+    TextBox124.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "T").Value
+    TextBox125.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "U").Value
+    TextBox126.Text = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "V").Value
+    
+    TextBox145.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "B").Value
+    TextBox146.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "C").Value
+    TextBox147.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "D").Value
+    TextBox148.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "E").Value
+    TextBox149.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "F").Value
+    TextBox150.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "G").Value
+    TextBox151.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "H").Value
+    TextBox152.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "I").Value
+    TextBox153.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "J").Value
+    TextBox154.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "K").Value
+    TextBox155.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "L").Value
+    'TextBox156.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "L").Value
+    TextBox157.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "M").Value
+    TextBox158.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "N").Value
+    TextBox159.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "O").Value
+    TextBox160.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "P").Value
+    TextBox161.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "Q").Value
+    TextBox162.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "R").Value
+    TextBox163.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "S").Value
+    TextBox164.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "T").Value
+    TextBox165.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "U").Value
+    TextBox166.Text = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "V").Value
+    
+    
+    CheckBox152.Value = Worksheets("cbo_gov").Cells(ActiveCell.Row, "T").Value
+    CheckBox153.Value = Worksheets("cbo_assets").Cells(ActiveCell.Row, "H").Value
+    CheckBox154.Value = Worksheets("cbo_sources").Cells(ActiveCell.Row, "R").Value
+    CheckBox155.Value = Worksheets("cbo_nrm_assets").Cells(ActiveCell.Row, "Y").Value
+    CheckBox156.Value = Worksheets("cbo_nrm_acts").Cells(ActiveCell.Row, "S").Value
+    CheckBox157.Value = Worksheets("cbo_jvp").Cells(ActiveCell.Row, "J").Value
+    CheckBox158.Value = Worksheets("cbo_support").Cells(ActiveCell.Row, "O").Value
+    CheckBox159.Value = Worksheets("cbo_activities").Cells(ActiveCell.Row, "V").Value
+    CheckBox160.Value = Worksheets("cbo_revenue").Cells(ActiveCell.Row, "Y").Value
+    CheckBox161.Value = Worksheets("cbo_kind").Cells(ActiveCell.Row, "T").Value
+    CheckBox162.Value = Worksheets("cbo_spend").Cells(ActiveCell.Row, "U").Value
+    CheckBox163.Value = Worksheets("cbo_benefit").Cells(ActiveCell.Row, "AJ").Value
+
+   ' cbo_naam = Worksheets("cbo").Cells(ActiveCell.Row, "B").Value
+    cbo_numt = ActiveCell.Row
+    cbo_numto = cbo_numt - 1
+    TextBox167.Text = Worksheets("cbo").Cells(ActiveCell.Row, "R").Value
+    'TextBox167.Text = ActiveCell.Row
+
+  End Function
