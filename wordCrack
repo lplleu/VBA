@@ -3,7 +3,7 @@ Dim i As Long
 i = 0
 Dim FileName As String
 Application.FileDialog(msoFileDialogOpen).Show
-FileName = Application.FileDialog(msoFileDialogOpen).
+FileName = Application.FileDialog(msoFileDialogOpen).SelectedItems(1)
 ScreenUpdating = False
 Line2: On Error GoTo Line1
 Documents.Open FileName, , True, , i& ''
